@@ -158,6 +158,10 @@ header{
     transition: color 300ms;
 }
 
+.caja1 label{
+    font-size: 20px;
+}
+
 /*Pie de pagina*/
 
 .container-footer{

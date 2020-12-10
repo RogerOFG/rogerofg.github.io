@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -10,9 +11,11 @@
     <link rel="stylesheet" href="Boostrap/css/bootstrap.min.css">
     <script src="Boostrap/js/bootstrap.min.js"></script>
     <script src="Boostrap/js/jquery-3.5.1.min.js"></script>
+    <script src="js/simuladorDeCreditos.js"></script>
 
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
     <header>
         <div class="header-content">
@@ -40,6 +43,25 @@
 
     <div class="container-all" id="move-content">
 
+        <div class="caja1">
+            <h1 class="titulo mb-5">Simulador de credito</h1><br>
+            <label class="mr-5">Monto a prestar:</label>
+            <input type="number" id="monto" placeholder="Monto">
+            <br>
+            <label class="mr-5 mt-5">Numero de cuotas:</label>
+            <input type="number" id="coutas" placeholder="No. de Cuotas">
+            <br>
+            <input type="submit" onclick="calcular()" class="mt-5 w-25 btn btn-primary">
+            <br><br>
+            <div class="container mt-5">
+                <p id="error" style="color: red;"></p>
+                <strong>
+                    <p id="intereses"></p>
+                    <p id="pagoxcoutas"></p>
+                </strong>
+            </div>
+        </div>
+
         <div class="container-footer">
             <footer>
                 <div class="logo-footer">
@@ -55,8 +77,9 @@
                 <h4>2020 Florez Roger - Muños Pedro - Ortega Yannina - Zamudio Jorge © Todos los Derechos Reservados</h4>
             </footer>
         </div>
-    
+
     </div>
     <script src="js/script.js"></script>
 </body>
+
 </html>
